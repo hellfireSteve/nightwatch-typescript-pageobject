@@ -1,7 +1,7 @@
-const signinCommands = {  
-  signin(email: String, password: String) {
-    return this
-      .waitForElementVisible('@emailInput')
+var signinCommands = {  
+  signin: function(email: String, password: String) {
+	  this.api.pause(1000);
+    return this.waitForElementVisible('@emailInput')
       .setValue('@emailInput', email)
       .setValue('@passwordInput', password)
       .waitForElementVisible('@signinButton')
