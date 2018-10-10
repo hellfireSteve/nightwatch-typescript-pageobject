@@ -5,10 +5,12 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 module.exports = {
-	// error TS7006: Parameter 'client' implicitly has an 'any' type.
-'User can sign in'(client: any) {
-		const signinPage = client.page.signinPage();
-		const instancesPage = client.page.instancesPage();
+'User can sign in': function (client: any) {
+		console.log('Starting...');
+		var signinPage = client.page.signinPage();
+		
+		console.log('not this...');
+		var instancesPage = client.page.instancesPage();
 		
 		console.log(process.env.EMAIL);
 		
