@@ -1,0 +1,30 @@
+{
+  "name": "nightwatch-tutorial",
+  "version": "1.0.0",
+  "description": "nightwatch tutorial",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "test": "nightwatch",
+    "e2e-setup": "selenium-standalone install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/prompt-sync": "^4.1.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "json-loader": "^0.5.7",
+    "selenium-standalone": "^6.15.2",
+    "ts-loader": "^5.2.1",
+    "webpack": "^4.20.2"
+  },
+  "dependencies": {
+    "@types/dotenv": "^4.0.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "dotenv": "^6.1.0",
+    "source-map-loader": "^0.2.4"
+  }
+}
